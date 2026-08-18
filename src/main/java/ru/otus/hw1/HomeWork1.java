@@ -18,12 +18,7 @@ public class HomeWork1 {
         if (i == 2) checkSign(1, 4, 5);
         if (i == 3) selectColor();
         if (i == 4) compareNumbers();
-        if (i == 5) {
-            greetings();
-            checkSign(1, 4, 5);
-            selectColor();
-            compareNumbers();
-        }
+        if (i == 5) addOrSubtractAndPrint(15, 4, false);
     }
 
     // (1)
@@ -46,7 +41,7 @@ public class HomeWork1 {
         int data = -10;
         if (data <= 10) System.out.println("Красный");
         else if (data <= 20) System.out.println("Желтый");
-        else if (data > 20) System.out.println("Зеленый");
+        else System.out.println("Зеленый");
     }
 
     // (4)
@@ -55,6 +50,12 @@ public class HomeWork1 {
         int b = 103;
         if (a >= b) System.out.println("a >= b");
         else System.out.println("a < b");
+    }
+
+    // (5)
+    public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
+        if (increment) System.out.println(initValue + delta);
+        else System.out.println(initValue - delta);
     }
 
 
