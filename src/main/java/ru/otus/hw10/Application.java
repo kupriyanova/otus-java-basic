@@ -1,4 +1,4 @@
-package ru.otus;
+package ru.otus.hw10;
 
 public class Application {
 
